@@ -14,6 +14,8 @@ https://animista.net/play/entrances/tilt-in
 
 https://animista.net/play/background/ken-burns
 
+https://animista.net/play/background/color-change/color-change-4x
+
 ## icons
 
 https://lucide.dev/icons/

@@ -1,8 +1,8 @@
 import { Leaf } from "lucide-react";
 import { tiltak } from "../../data/tiltak.js";
+import TilTakKort from "../../components/TilTakKort.jsx";
 
 export default function TiltakPage() {
-  console.log(tiltak);
   return (
     <div className="container mx-auto px-4 py-12">
       {/* Overskrift */}
@@ -10,7 +10,7 @@ export default function TiltakPage() {
         <div className="flex justify-center mb-4">
           <Leaf size={60} className="text-green-600" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-green-800 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-green-600 mb-4">
           10 Klimatiltak du kan gjøre
         </h1>
         <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -20,7 +20,9 @@ export default function TiltakPage() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-        tiltak data map over her fra tiltak.js
+        {tiltak.map((t) => (
+          <TilTakKort key={t.id} tiltak={t} />
+        ))}
       </div>
 
       <div className="mt-16 max-w-3xl mx-auto bg-green-100 p-8 rounded-lg">
