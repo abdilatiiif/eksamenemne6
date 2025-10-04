@@ -17,7 +17,7 @@ function Navigation() {
 
   return (
     <>
-      <div className="bg-green-300 flex justify-between px-4 p-5">
+      <div className="bg-[#a9e190] flex justify-between px-4 p-5">
         <Link
           href="/"
           className="flex items-center gap-2 text-2xl font-bold hover:text-green-600 transition"
@@ -93,7 +93,7 @@ function Navigation() {
         </button>
       </div>
       {menuOpen && (
-        <nav className="md:hidden tilt-in-top-1 bg-green-300 items-center flex justify-center flex-col pb-4">
+        <nav className="md:hidden tilt-in-top-1 bg-white items-center flex justify-center flex-col pb-4">
           <Link
             href="/"
             className="hover:text-green-200 transition font-medium py-2 flex items-center gap-2"

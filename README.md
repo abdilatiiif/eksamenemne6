@@ -12,6 +12,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 https://animista.net/play/entrances/tilt-in
 
+https://animista.net/play/background/ken-burns
+
 ## icons
 
 https://lucide.dev/icons/
+
+##knapper nav btn
+
+https://codepen.io/dan10gc/pen/EQbjgP
+
+## borders
+
+https://9elements.github.io/fancy-border-radius/

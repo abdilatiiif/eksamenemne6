@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navigation from "../components/Navigation.jsx";
 import { Ubuntu } from "next/font/google";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Tropical nature",
@@ -16,8 +17,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={ubuntu.className}>
-        <Navigation />
-        <div className="max-w-6xl mx-auto">{children}</div>
+        <div className="max-w-8xl md:mx-auto bg-[#a9e190]">
+          <Navigation />
+
+          {children}
+
+          <Footer />
+        </div>
       </body>
     </html>
   );
