@@ -19,7 +19,7 @@ import {
 console.log("verstinger data:", verstinger);
 
 function VerstingerPage() {
-  const [view, setView] = useState("chart");
+  const [view, setView] = useState("list");
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -87,7 +87,7 @@ function VerstingerPage() {
         </p>
 
         <Link
-          href="/utregning"
+          href="/verstinger/utregning"
           className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold mb-8"
         >
           <ArrowRight size={20} />
@@ -100,7 +100,7 @@ function VerstingerPage() {
 
 function ListView({ data }) {
   return (
-    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="bg-green-700 text-white px-6 py-4 grid grid-cols-3 gap-4 font-bold">
         <div>Plassering</div>
         <div>Land</div>
