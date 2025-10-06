@@ -27,3 +27,8 @@ https://codepen.io/dan10gc/pen/EQbjgP
 ## borders
 
 https://9elements.github.io/fancy-border-radius/
+
+## grafer
+
+https://recharts.org/en-US/examples/CustomContentOfTooltip
+https://recharts.org/en-US/examples/SimpleLineChart
