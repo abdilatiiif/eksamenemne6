@@ -34,7 +34,7 @@ function TiltakPageDetalje({ params }) {
             src={tiltakDetalje.imageUrl}
             alt={tiltakDetalje.title}
             fill
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full kenburns-top-right-2"
           />
         </div>
         {/* tekst*/}

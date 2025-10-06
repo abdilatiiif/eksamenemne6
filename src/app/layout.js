@@ -59,9 +59,7 @@ export default function RootLayout({ children }) {
           >
             <div className="max-w-8xl md:mx-auto bg-[#a9e190]">
               <Navigation />
-
               {children}
-
               <Footer />
             </div>
           </motion.div>
