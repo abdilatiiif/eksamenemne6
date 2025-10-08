@@ -29,7 +29,7 @@ function VerstingerPage() {
           <TrendingDown size={60} className="text-green-600" />
         </div>
 
-        <HeadingText textContent={"Klima-verstinger"} />
+        <HeadingText textContent={"Klima-verstinger"} color={"text-red-500"} />
         <p className="text-xl text-gray-700 max-w-3xl mx-auto">
           Topp 20 land med høyest CO₂-utslipp per innbygger per år. Data viser
           tonn CO₂ per person.

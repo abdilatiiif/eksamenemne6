@@ -64,7 +64,7 @@ export default function Home() {
             <div className="flex justify-center mb-4">
               <TrendingDown size={48} className="text-green-600" />
             </div>
-            <h3 className="text-2xl font-bold text-green-800 mb-3 text-center">
+            <h3 className="text-2xl font-bold text-red-500 mb-3 text-center">
               Klima-verstinger
             </h3>
             <p className="text-gray-600 text-center">
