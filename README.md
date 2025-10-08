@@ -14,6 +14,8 @@ https://animista.net/play/entrances/tilt-in
 
 https://animista.net/play/background/ken-burns
 
+https://animista.net/play/background/color-change/color-change-4x
+
 ## icons
 
 https://lucide.dev/icons/
@@ -25,3 +27,8 @@ https://codepen.io/dan10gc/pen/EQbjgP
 ## borders
 
 https://9elements.github.io/fancy-border-radius/
+
+## grafer
+
+https://recharts.org/en-US/examples/CustomContentOfTooltip
+https://recharts.org/en-US/examples/SimpleLineChart

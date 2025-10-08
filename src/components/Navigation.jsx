@@ -17,10 +17,10 @@ function Navigation() {
 
   return (
     <>
-      <div className="bg-[#a9e190] flex justify-between px-4 p-5">
+      <div className="bg-[#a9e190] flex justify-between px-4 p-5  shadow-lg border-white">
         <Link
           href="/"
-          className="flex items-center gap-2 text-2xl font-bold hover:text-green-600 transition"
+          className="flex items-center gap-2 text-2xl font-bold hover:text-green-600 transition cursor-pointer"
         >
           <Leaf size={32} />
           <span>Klimakampen</span>
@@ -32,9 +32,9 @@ function Navigation() {
         <nav className="hidden md:flex gap-3 ">
           <Link
             href="/"
-            className="hover:text-green-200 transition font-medium"
+            className="hover:text-green-200 transition font-medium "
           >
-            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full group ">
+            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full group cursor-pointer ">
               <span className="relative z-10 text-white mix-blend-difference flex">
                 {" "}
                 <House size={20} /> Hjem
@@ -46,31 +46,31 @@ function Navigation() {
             href="/tiltak"
             className="hover:text-green-200 transition font-medium flex"
           >
-            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full group">
+            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full cursor-pointer group">
               <span className="relative z-10 text-white mix-blend-difference flex">
                 {" "}
                 <HandHelping size={20} /> Tiltak
               </span>
-              <span className="absolute left-0 top-0 h-full w-2/4 bg-white rounded-full transition-all duration-[850ms] ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:w-full"></span>
+              <span className="absolute left-0 top-0 h-full w-2/4 bg-white rounded-full transition-all duration-[850ms] ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] cursor-pointer group-hover:w-full"></span>
             </button>
           </Link>
           <Link
             href="/verstinger"
             className="hover:text-green-200 transition font-medium flex"
           >
-            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full group">
+            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full cursor-pointer group">
               <span className="relative z-10 text-white mix-blend-difference flex">
                 {" "}
                 <FlameKindling size={20} /> Verstinger
               </span>
-              <span className="absolute left-0 top-0 h-full w-2/6 bg-white rounded-full transition-all duration-[850ms] ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:w-full"></span>
+              <span className="absolute left-0 top-0 h-full w-2/6 bg-white rounded-full transition-all duration-[850ms] ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] cursor-pointer group-hover:w-full"></span>
             </button>
           </Link>
           <Link
             href="/kalkulator"
             className="hover:text-green-200 transition font-medium flex"
           >
-            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full group">
+            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full group cursor-pointer">
               <span className="relative z-10 text-white mix-blend-difference flex">
                 {" "}
                 <Calculator size={20} /> Klimakalkulator
