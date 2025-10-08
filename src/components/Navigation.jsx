@@ -116,7 +116,7 @@ function Navigation() {
             Verstinger <FlameKindling size={16} />
           </Link>
           <Link
-            href="/kalkulator"
+            href="/klimacalc"
             className="hover:text-green-200 transition font-medium py-2 flex items-center gap-2"
             onClick={() => setMenuOpen(false)}
           >

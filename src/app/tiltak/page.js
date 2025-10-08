@@ -1,6 +1,7 @@
 import { Leaf } from "lucide-react";
 import { tiltak } from "../../data/tiltak.js";
 import TilTakKort from "../../components/TilTakKort.jsx";
+import HeadingText from "@/components/HeadingText.jsx";
 
 export default function TiltakPage() {
   return (
@@ -10,9 +11,9 @@ export default function TiltakPage() {
         <div className="flex justify-center mb-4">
           <Leaf size={60} className="text-green-600" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-green-600 mb-4">
-          10 Klimatiltak du kan gjøre
-        </h1>
+
+        <HeadingText textContent={"10 Klimatiltak du kan gjøre"} />
+
         <p className="text-xl text-gray-700 max-w-3xl mx-auto">
           Små endringer i hverdagen kan gjøre stor forskjell. Her er 10 konkrete
           tiltak som reduserer CO₂-utslipp og bidrar til en grønnere fremtid.

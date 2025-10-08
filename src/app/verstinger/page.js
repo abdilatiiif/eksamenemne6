@@ -15,6 +15,7 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts";
+import HeadingText from "@/components/HeadingText.jsx";
 
 console.log("verstinger data:", verstinger);
 
@@ -27,9 +28,8 @@ function VerstingerPage() {
         <div className="flex justify-center mb-4">
           <TrendingDown size={60} className="text-green-600" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-green-800 mb-4">
-          Klima-verstinger
-        </h1>
+
+        <HeadingText textContent={"Klima-verstinger"} />
         <p className="text-xl text-gray-700 max-w-3xl mx-auto">
           Topp 20 land med høyest CO₂-utslipp per innbygger per år. Data viser
           tonn CO₂ per person.
