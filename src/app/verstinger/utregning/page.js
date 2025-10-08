@@ -38,7 +38,7 @@ function utregningPage() {
         </section>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          <div className="bg-white rounded-xl shadow-lg p-6">
+          <div className="bg-white rounded-xl shadow-lg  p-6">
             <div className="flex items-center mb-4">
               <i className="fas fa-industry text-red-500 text-xl mr-3"></i>
               <h2 className="text-2xl font-semibold text-gray-800">
