@@ -16,6 +16,8 @@ https://animista.net/play/background/ken-burns
 
 https://animista.net/play/background/color-change/color-change-4x
 
+https://animejs.com/
+
 ## icons
 
 https://lucide.dev/icons/

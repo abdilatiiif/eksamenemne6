@@ -67,7 +67,7 @@ function Navigation() {
             </button>
           </Link>
           <Link
-            href="/kalkulator"
+            href="/klimacalc"
             className="hover:text-green-200 transition font-medium flex"
           >
             <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full group cursor-pointer">
