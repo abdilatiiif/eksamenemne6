@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { Menu } from "lucide-react";
+import HeadingText from "./HeadingText";
 
 function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +24,12 @@ function Navigation() {
           className="flex items-center gap-2 text-2xl font-bold hover:text-green-600 transition cursor-pointer"
         >
           <Leaf size={32} />
-          <span>Klimakampen</span>
+          <HeadingText
+            size={"text-2xl"}
+            textContent={"Klimakampen"}
+            color={"text-black"}
+            loop={false}
+          />
         </Link>
 
         {
@@ -58,17 +64,18 @@ function Navigation() {
             href="/verstinger"
             className="hover:text-green-200 transition font-medium flex"
           >
-            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full cursor-pointer group">
+            <button className="relative mt-3 p-2 text-md overflow-hidden rounded-full cursor-pointer group">
               <span className="relative z-10 text-white mix-blend-difference flex">
                 {" "}
-                <FlameKindling size={20} /> Verstinger
+                <FlameKindling size={20} />{" "}
+                <span className="text-red-500">Verstinger</span>
               </span>
               <span className="absolute left-0 top-0 h-full w-2/6 bg-white rounded-full transition-all duration-[850ms] ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] cursor-pointer group-hover:w-full"></span>
             </button>
           </Link>
           <Link
-            href="/kalkulator"
-            className="hover:text-green-200 transition font-medium flex"
+            href="/klimacalc"
+            className="hover:text-red-500 transition font-medium flex"
           >
             <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full group cursor-pointer">
               <span className="relative z-10 text-white mix-blend-difference flex">
@@ -110,13 +117,14 @@ function Navigation() {
           </Link>
           <Link
             href="/verstinger"
-            className="hover:text-green-200 transition font-medium py-2 flex items-center gap-2"
+            className="hover:text-red-500 transition font-medium py-2 flex items-center gap-2"
             onClick={() => setMenuOpen(false)}
           >
-            Verstinger <FlameKindling size={16} />
+            <span className="text-red-500">Verstinger</span>{" "}
+            <FlameKindling size={16} />
           </Link>
           <Link
-            href="/kalkulator"
+            href="/klimacalc"
             className="hover:text-green-200 transition font-medium py-2 flex items-center gap-2"
             onClick={() => setMenuOpen(false)}
           >

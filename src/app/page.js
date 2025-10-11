@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Leaf, TrendingDown, Calculator } from "lucide-react";
+import HeadingText from "@/components/HeadingText";
 
 export default function Home() {
   return (
@@ -12,9 +13,9 @@ export default function Home() {
           <div className="flex justify-center mb-6">
             <Leaf size={80} className="text-green-600" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-green-600 mb-6">
-            Velkommen til Klimakampen
-          </h1>
+
+          <HeadingText />
+
           <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
             Skape en grønnere fremtid starter med kunnskap. Utforsk kraftfulle
             klimatiltak, sammenlign globale utslipp, og kartlegg ditt eget
@@ -63,7 +64,7 @@ export default function Home() {
             <div className="flex justify-center mb-4">
               <TrendingDown size={48} className="text-green-600" />
             </div>
-            <h3 className="text-2xl font-bold text-green-800 mb-3 text-center">
+            <h3 className="text-2xl font-bold text-red-500 mb-3 text-center">
               Klima-verstinger
             </h3>
             <p className="text-gray-600 text-center">
@@ -78,7 +79,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/kalkulator"
+            href="/klimacalc"
             className="bg-white border-card p-8 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
           >
             <div className="flex justify-center mb-4">
