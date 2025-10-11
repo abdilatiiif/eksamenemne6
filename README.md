@@ -1,5 +1,8 @@
 This is a [Next.js]
 
+nettsiden:
+https://klimakampen.netlify.app/
+
 ## Getting Started
 
 First, run the development server:
