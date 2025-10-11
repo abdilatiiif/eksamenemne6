@@ -1,4 +1,4 @@
-import { Leaf } from "lucide-react";
+import { Leaf, HandHelping } from "lucide-react";
 import { tiltak } from "../../data/tiltak.js";
 import TilTakKort from "../../components/TilTakKort.jsx";
 import HeadingText from "@/components/HeadingText.jsx";
@@ -9,7 +9,7 @@ export default function TiltakPage() {
       {/* Overskrift */}
       <div className="text-center mb-12">
         <div className="flex justify-center mb-4">
-          <Leaf size={60} className="text-green-600" />
+          <HandHelping size={70} className="text-green-600" />
         </div>
 
         <HeadingText textContent={"10 Klimatiltak du kan gjøre"} />
@@ -40,3 +40,5 @@ export default function TiltakPage() {
     </div>
   );
 }
+
+// husk gjennomsnitt per nordmeenn
