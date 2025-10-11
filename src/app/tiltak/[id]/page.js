@@ -11,7 +11,8 @@ export async function generateStaticParams() {
   }));
 }
 
-function TiltakPageDetalje({ params }) {
+async function TiltakPageDetalje({ params }) {
+  const { id } = await params;
   const tiltakDetalje = tiltak.find((t) => t.id === params.id);
   console.log("side funnet:", tiltakDetalje);
 

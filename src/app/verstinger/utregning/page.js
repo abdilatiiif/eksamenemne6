@@ -67,8 +67,8 @@ function utregningPage() {
             <div className="bg-gray-50 rounded-lg p-4">
               <h3 className="font-semibold text-gray-800 mb-2">Beregning:</h3>
               <p className="text-gray-700 mb-2">
-                Basert på "oppstrøms"-estimering - beregner utslipp basert på
-                forbruk av fossilt brensel.
+                Basert på &apos oppstrøms &apos -estimering - beregner utslipp
+                basert på forbruk av fossilt brensel.
               </p>
               <div className="bg-white p-3 rounded border">
                 <code className="text-sm text-gray-800">
@@ -89,8 +89,8 @@ function utregningPage() {
 
             <p className="text-gray-700 mb-4">
               Et gjennomsnitt som viser hvor mye hver person i landet ville
-              "stått for" dersom de totale utslippene ble fordelt likt på alle
-              innbyggerne.
+              &apos stått for &apos dersom de totale utslippene ble fordelt likt
+              på alle innbyggerne.
             </p>
 
             <div className="bg-green-50 rounded-lg p-4 mb-4">
@@ -242,8 +242,8 @@ function utregningPage() {
                   Importerte/eksporterte varer
                 </h3>
                 <p className="text-gray-700">
-                  De fleste tallene er for "territoriale utslipp" og inkluderer
-                  ikke utslipp fra produksjon av importerte varer.
+                  De fleste tallene er for &apos territoriale utslipp &apos og
+                  inkluderer ikke utslipp fra produksjon av importerte varer.
                 </p>
               </div>
             </div>

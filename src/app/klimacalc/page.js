@@ -3,7 +3,7 @@ import { animate } from "animejs";
 import HeadingText from "@/components/HeadingText";
 
 import { Calculator, Car, Utensils, Zap, Save, Trash2 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 function KlimaCalcpage() {
   useEffect(() => {
@@ -35,32 +35,7 @@ function KlimaCalcpage() {
 
   const [dropdown, setDropDown] = useState(false);
 
-  // Oppdatering av formdata state ved input endring
-  useEffect(() => {
-    kalkulerKlimafotavtrykk();
-  }, [formdata]);
-
-  const handleInputChange = (hva, value) => {
-    setFormdata({ ...formdata, [hva]: Number(value) || Number("") });
-  };
-
-  const handleOppvarmingsType = (value) => {
-    setFormdata({ ...formdata, oppvarming: value });
-  };
-
-  // Kalkulasjonslogikk
-  {
-    /* 
-    Forklaring:
-*formData.carKm: antall km du kjører per uke.
-* 52: gjør det om til km per år (52 uker i året).
-* 0.12: hver km slipper ut ca. 0.13 kg CO₂/km (typisk bensinbil).
-/ 1000: omgjøring fra kg til tonn.
-    
-    */
-  }
-
-  const kalkulerKlimafotavtrykk = () => {
+  const kalkulerKlimafotavtrykk = useCallback(() => {
     // Transport (per år)
     const bilUtslipp = (formdata.bilKm * 52 * 0.13) / 1000;
     const kollektivUtslipp = (formdata.offentligTransport * 52 * 0.5) / 1000;
@@ -119,6 +94,19 @@ function KlimaCalcpage() {
 
     // retunere total box tilbake
     setDropDown(false);
+  }, [formdata, setResults, setDropDown]);
+
+  // Oppdatering av formdata state ved input endring
+  useEffect(() => {
+    kalkulerKlimafotavtrykk();
+  }, [formdata, kalkulerKlimafotavtrykk]);
+
+  const handleInputChange = (hva, value) => {
+    setFormdata({ ...formdata, [hva]: Number(value) || Number("") });
+  };
+
+  const handleOppvarmingsType = (value) => {
+    setFormdata({ ...formdata, oppvarming: value });
   };
 
   // Lagre resultatet i localStorage

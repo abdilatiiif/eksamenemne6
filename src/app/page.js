@@ -1,12 +1,20 @@
 import Link from "next/link";
 import { Leaf, TrendingDown, Calculator } from "lucide-react";
 import HeadingText from "@/components/HeadingText";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <div className="relative h-64 md:h-96 mb-12 overflow-hidden ">
-        <img src="/forest.jpeg" alt="Forest" className=" kenburns-top-right " />
+        <Image
+          height={1080}
+          width={1920}
+          src="/forest.jpeg"
+          alt="Forest"
+          className=" kenburns-top-right "
+          priority
+        />
       </div>
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-16">
