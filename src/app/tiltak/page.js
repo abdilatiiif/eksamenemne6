@@ -26,7 +26,7 @@ export default function TiltakPage() {
         ))}
       </div>
 
-      <div className="mt-16 max-w-3xl mx-auto bg-green-100 p-8 rounded-lg">
+      <div className=" border-card mt-16 max-w-3xl mx-auto bg-green-100 p-8 rounded-lg">
         <h2 className="text-2xl font-bold text-green-800 mb-4">
           Hvorfor er dette viktig?
         </h2>

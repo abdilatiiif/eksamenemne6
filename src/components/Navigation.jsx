@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { Menu } from "lucide-react";
-import Head from "next/head";
 import HeadingText from "./HeadingText";
 
 function Navigation() {
@@ -65,11 +64,11 @@ function Navigation() {
             href="/verstinger"
             className="hover:text-green-200 transition font-medium flex"
           >
-            <button className="relative mt-3 p-2 text-md text-white overflow-hidden rounded-full cursor-pointer group">
+            <button className="relative mt-3 p-2 text-md overflow-hidden rounded-full cursor-pointer group">
               <span className="relative z-10 text-white mix-blend-difference flex">
                 {" "}
                 <FlameKindling size={20} />{" "}
-                <span className="text-red-500">Verstinger </span>
+                <span className="text-red-500">Verstinger</span>
               </span>
               <span className="absolute left-0 top-0 h-full w-2/6 bg-white rounded-full transition-all duration-[850ms] ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] cursor-pointer group-hover:w-full"></span>
             </button>
