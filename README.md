@@ -1,13 +1,12 @@
-This is a [Next.js]
+## Next JS + Typescript + tailwind
 
-nettsiden:
+## nettsiden:
+
 https://klimakampen.netlify.app/
 
 ## Getting Started
 
 First, run the development server:
-
-install node
 
 npm run dev
 
@@ -39,3 +38,7 @@ https://9elements.github.io/fancy-border-radius/
 
 https://recharts.org/en-US/examples/CustomContentOfTooltip
 https://recharts.org/en-US/examples/SimpleLineChart
+
+## Github repo:
+
+https://github.com/abdilatiiif/eksamenemne6
