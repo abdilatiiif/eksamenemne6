@@ -2,7 +2,7 @@
 
 ## nettsiden:
 
-https://klimakampen.netlify.app/
+https://eksamenemne6.vercel.app/
 
 ## Getting Started
 
